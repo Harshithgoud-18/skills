@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+    <course>
+        <title>Cybersecurity</title>
+        <instructor>K.V Raman</instructor>
+        <price>2000</price>
+        <rating>4</rating>
+    </course>
+    <course>
+        <title>Computer Networks and Internet Protocol</title>
+        <instructor>Soumya Kanti Ghosh</instructor>
+        <price>1500</price>
+        <rating>5</rating>
+    </course>
+</courses>

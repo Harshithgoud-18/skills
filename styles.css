@@ -1,0 +1,288 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 20px auto;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+
+button {
+    padding: 8px 15px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkblue;
+}
+.body-container{
+     margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+}
+
+.auth-section {
+  max-width: 750px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 36px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+}
+
+.tab-buttons {
+  display: flex;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #777;
+  font-weight: 600;
+  transition: color 0.2s, border-bottom 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+  color: black;
+  border-bottom: 3px solid black;
+}
+
+.tab-btn:hover {
+  color: white;
+}
+
+.auth-form h2 {
+  font-size: 1.4rem;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =========================================
+   FORM ELEMENTS (shared by all forms)
+   ========================================= */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #f5a623;
+}
+
+.error-msg {
+  font-size: 0.82rem;
+  color: #e74c3c;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.success-msg {
+  text-align: center;
+  color: #27ae60;
+  font-size: 0.95rem;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+input, textarea {
+    padding: 8px;
+    margin: 5px;
+    width: 250px;
+}
+/* Contact Page Styling */
+
+.contact-body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    font-family: Arial, sans-serif;
+}
+
+.contact-container {
+    background: white;
+    padding: 40px;
+    width: 650px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #243b55;
+    box-shadow: 0 0 5px rgba(36,59,85,0.4);
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #243b55;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #141e30;
+}
+
+/* =========================================
+   FOOTER STYLES
+   ========================================= */
+footer {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #444;
+    margin-top: 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ccc;
+}
